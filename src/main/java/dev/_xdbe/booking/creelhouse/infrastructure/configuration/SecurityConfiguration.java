@@ -48,12 +48,12 @@ public class SecurityConfiguration {
 
     UserDetails administrator = User.builder()
             .username("admin")
-            .password("{bcrypt}$2a$12$DEOfZhY8IMqA0I7PgRXWRetWf1guUAswZtGqnk4zWE1kfzWKm0mei") //supermotdepasse
+            .password("{bcrypt}$2a$12$.K/z91XVdt8ckF.sDmHGDezwEZ5ErN.V.Shuzcm1RUqTBkBqycD5i")
             .roles("ADMIN")
             .build();
     UserDetails guest = User.builder()
             .username("guest")
-            .password("{bcrypt}$2a$12$/qXAkm8yz6JLTTqldW.KoOIjKKKTktyksGQ68e8SYdIAxgRaN6W06") //motdepassesuper
+            .password("{bcrypt}$2a$12$.K/z91XVdt8ckF.sDmHGDezwEZ5ErN.V.Shuzcm1RUqTBkBqycD5i")
             .roles("GUEST")
             .build();
     @Bean
