@@ -30,6 +30,10 @@ server:
   ssl:
     bundle: web
   port: 8443
+  servlet:
+    session:
+      cookie:
+        same-site: strict
   # Step 1b: Enable SSL and specify ssl bundle
   # ...
   # Step 1b: End of SSL configuration
