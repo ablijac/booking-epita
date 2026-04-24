@@ -36,8 +36,7 @@ jobs:
       #   uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
       - name: Run Semgrep
         run: |
-          semgrep scan --config .semgrep --sarif --output SemgrepAnalysis.sarif
-        continue-on-error: true
+          semgrep scan --config .semgrep --sarif --output SemgrepAnalysis.sarif ./src
       - name: Upload OSV SARIF
         uses: github/codeql-action/upload-sarif@7434149006143a4d75b82a2f411ef15b03ccc2d7
         with:
