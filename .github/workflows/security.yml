@@ -7,3 +7,12 @@ permissions:
   security-events: write
 # to fetch code (actions/checkout)
   contents: read
+jobs:
+  name: run osv-scanner
+  uses: google/osv-scanner-action/osv-scanner-action@<SHA256>
+  with:
+    scan-args: |-
+      --format sarif
+      --output DependenciesAnalysisFull.sarif
+      ./
+  continue-on-error: true
