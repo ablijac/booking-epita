@@ -2,8 +2,8 @@ name: security
 on: workflow_dispatch
 permissions:
 # Required to upload SARIF file to CodeQL.
-actions: read
+  actions: read
 # Require writing security events to upload SARIF file
-security-events: write
+  security-events: write
 # to fetch code (actions/checkout)
-contents: read
+  contents: read
