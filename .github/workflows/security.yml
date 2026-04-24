@@ -32,8 +32,8 @@ jobs:
     container:
       image: returntocorp/semgrep@sha256:aba64aaf601ff71b769b082d3c9f95cb02a2bb20a6404f42ae94f240aec6ace7
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
+      # - name: Checkout repository
+      #   uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
       - name: Run Semgrep
         run: |
           semgrep scan --config .semgrep --sarif --output SemgrepAnalysis.sarif
