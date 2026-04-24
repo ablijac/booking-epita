@@ -30,7 +30,7 @@ jobs:
     name: semgrep
     runs-on: ubuntu-latest
     container:
-      image: returntocorp/semgrep@sha256:aba64aaf601ff71b769b082d3c9f95cb02a2bb20a6404f42ae94f240aec6ace7
+      image: returntocorp/semgrep@sha256:326e5f41cc972bb423b764a14febbb62bbad29ee1c01820805d077dd868fea48
     steps:
       # - name: Checkout repository
       #   uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
