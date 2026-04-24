@@ -1,6 +1,5 @@
 name: security
-on:
-workflow_dispatch
+on: workflow_dispatch
 permissions:
 # Required to upload SARIF file to CodeQL.
 actions: read
